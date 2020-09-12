@@ -33,4 +33,4 @@ function Subtotal(itemCount, totalPrice) {
     );
 }
 
-export default Subtotal;
+export default Subtotal
