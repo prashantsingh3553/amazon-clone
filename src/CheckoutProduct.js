@@ -3,7 +3,7 @@ import './CheckoutProduct.css';
 import Rating from '@material-ui/lab/Rating';
 import { useStateValue } from './StateProvider';
 
-function CheckoutProduct({ id, image, title, price, rating }) {
+function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     const [{ basket }, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
@@ -30,9 +30,11 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                     <strong>{price}</strong>
                 </p>
                 <div className="checkoutProduct_rating">
-                <Rating name="read-only" value={rating} precision="0.5" readOnly />
+                    <Rating name="read-only" value={rating} precision="0.5" readOnly />
                 </div>
-                <button onClick={removeFromBasket}>Remove from Basket</button>
+                {!hideButton && (
+                    <button onClick={removeFromBasket}>Remove from Basket</button>
+                )}
             </div>
         </div>
     );
