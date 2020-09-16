@@ -9,11 +9,17 @@ function Home() {
         <div className='home'>
             <div className='home_container'>
 
-                <Carousel  autoPlay className='home_image' showThumbs={false} showStatus={false} renderIndicator={false}>
+                <Carousel  autoPlay stopOnHover={false} infiniteLoop={true}  className='home_image' showThumbs={false} showStatus={false} renderIndicator={false}>
                     <div>
                         <img
                             
                             src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Xiaomi/Redmi_Note9Pro_Max/Available_Now/Per_Daycallout/TallHero_1500X600_1._CB405352815_.jpg"
                             alt=""
                         />
                     </div>
@@ -32,12 +38,6 @@ function Home() {
                     <div>
                         <img
                             src="https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2020/GatewayNK/slide8/09/PL_Slide8_GWPC_1500x600_1-men._CB405247109_.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Xiaomi/Redmi_Note9Pro_Max/Available_Now/Per_Daycallout/TallHero_1500X600_1._CB405352815_.jpg"
                             alt=""
                         />
                     </div>
