@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Clone this project to your desktop.
+By git clone or download zip file
+
+## `npm install` to install all dependencies
+Go to project directory and run `npm install`
+Then, switch to /functions directory in the project and run `npm install` again.
+
 ## Available Scripts
 
 In the project directory, you can run:
